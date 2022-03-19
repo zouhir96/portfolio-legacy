@@ -2,8 +2,8 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Link from '../src/Link';
-import Copyright from '../src/Copyright';
+import Link from '../components/Link';
+import Copyright from '../components/Copyright';
 
 export default function Index() {
   return (
@@ -17,3 +17,5 @@ export default function Index() {
     </Container>
   );
 }
+
+
