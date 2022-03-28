@@ -122,18 +122,14 @@ export const projects = [
         description: " 1st ledger app in Morocco",
       },
     ],
-  } /* ,
+  }  ,
   {
-    image: "/static/tempsnip.png",
-    name: "Mahaal - 1st ledger app in Morocco",
+    name: "Mahaal",
     associatedWith: "Software Engineer @INYAD ",
     type: "",
     startDate: "Aug 2020",
     endDate: "Present",
     features: [
-      "Delivery manager of Mahaal.",
-      "Khdemt f konnash",
-      "Khdemt m3a lolo ou hada b 7ad dato injaz",
       "Delivery manager of Mahaal.",
       "Khdemt f konnash",
       "Khdemt m3a lolo ou hada b 7ad dato injaz",
@@ -160,5 +156,19 @@ export const projects = [
         items:["backend: SQL, frontend: SQLite (Room)"]
       },
     ],
-  }, */,
+    images: [
+      {
+        src: "/static/tempsnip.png",
+        description: " 1st ledger app in Morocco",
+      },
+      {
+        src: "/static/tempsnip.png",
+        description: " 1st ledger app in Morocco",
+      },
+      {
+        src: "/static/tempsnip.png",
+        description: " 1st ledger app in Morocco",
+      },
+    ],
+  },
 ];

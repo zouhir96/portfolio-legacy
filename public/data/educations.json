@@ -1,0 +1,28 @@
+[
+    {
+      "image": "/static/ensias.png",
+      "school": "National School of Computer Science and Systems Analysis(ENSIAS)",
+      "where": "Rabat, Morocco",
+      "degree": "Master",
+      "field": "Internet of Things and Mobile Services ",
+      "startDate": "Septembre 2018",
+      "endDate": "July 2020",
+      "grade": "",
+      "activities": [
+        "School football team player"
+      ]
+    },
+    {
+      "image": "/static/fst.png",
+      "school": "Faculty of Ccience and Technology(FST)",
+      "where": "Errachidia, Morocco",
+      "degree": "Bachelor",
+      "field": "Software Engineering",
+      "startDate": "Septembre 2014",
+      "endDate": "July 2018",
+      "grade": "",
+      "activities": [
+        "School football team player"
+      ]
+    }
+  ]

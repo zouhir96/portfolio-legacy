@@ -1,21 +1,30 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Link from '../components/Link';
-import Copyright from '../components/Copyright';
+import { experiences } from "../public/data/constants";
+import {
+  PageContainer,
+  PageTitle,
+  PageContentContainer,
+} from "../components/Styled";
+import Experience from "../components/Experience";
 
-export default function Index() {
+function Experiences({ exps }) {
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          My portfolio in NEXT Js
-        </Typography>
-        <Copyright />
-      </Box>
-    </Container>
+    <PageContainer>
+      <PageTitle>Experiences</PageTitle>
+      <PageContentContainer>
+        {exps.map((exp, index) => (
+          <Experience key={index} experience={exp} />
+        ))}
+      </PageContentContainer>
+    </PageContainer>
   );
 }
 
+export default Experiences;
+
+export async function getStaticProps(context) {
+  return {
+    props: { exps: experiences }, // will be passed to the page component as props
+  };
+}
 
