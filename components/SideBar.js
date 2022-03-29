@@ -59,7 +59,7 @@ export default function SideBar() {
   };
 
   return (
-    <div>
+    <div className="main">
       <Avatar
         alt="Zouhir RAJDAOUI"
         src="/static/my_image.jpeg"

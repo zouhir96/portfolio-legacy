@@ -9,36 +9,24 @@ export const experiences = [
     title: "Internship at @INYAD",
     startDate: "feb 02 2020",
     endDate: "jul 02 2020",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.",
+    description:"Currently working as the Principal android develper of the Mahaal application, which has mor than 50k installs on play store. With my team we are delivering new features weekly to give our users the best experience using our application. And to make our users hapier, we take their feedbacks in consideration during new features Brainstorming.",
     activities: [
-      "- Delivery manager of Mahaal.",
-      "- Khdemt f konnash.",
-      "- Khdemt m3a lolo ou hada b 7ad dato injaz.",
+      "- @Mahaal Android application from scratch.",
+      "- Integrated Android modern APIs, code refactoring and Multi-Module architecture.",
+      "- Own responsibility for the @Mahaal project release process.",
+      "- Coordinate @Mahaal project and progress reviews for team.",
     ],
   },
   {
     title: "Internship at @INYAD",
     startDate: "feb 02 2020",
     endDate: "jul 02 2020",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.",
+    description:"The internship of my Master degree graduation, it was my first professional experience. In this internship I took my first steps on Android developement, which i finished by developing two Android application, one of them (@konnash) was deployed to play store.",
     activities: [
-      "- Delivery manager of Mahaal.",
-      "- Khdemt f konnash.",
-      "- Khdemt m3a lolo ou hada b 7ad dato injaz.",
-    ],
-  },
-  {
-    title: "Internship at @INYAD",
-    startDate: "feb 02 2020",
-    endDate: "jul 02 2020",
-    description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd.",
-    activities: [
-      "- Delivery manager of Mahaal.",
-      "- Khdemt f konnash.",
-      "- Khdemt m3a lolo ou hada b 7ad dato injaz.",
+      "- Developed and deployed my first Andrdoi application from scratch (@Konnash).",
+      "- Setup multi-module architecture and MVVM design pattern.",
+      "- Work with Androidx and Jetpack Libraries.",
+      "- Use Jenkins CI/CD.",
     ],
   },
 ];
@@ -76,17 +64,15 @@ export const projects = [
     startDate: "feb 2020",
     endDate: "july 2020",
     features: [
-      "Delivery manager of Mahaal.",
-      "Khdemt f konnash",
-      "Khdemt m3a lolo ou hada b 7ad dato injaz",
-      "Delivery manager of Mahaal.",
-      "Khdemt f konnash",
-      "Khdemt m3a lolo ou hada b 7ad dato injaz"
+      "Creator of the first version from scratch.",
+      "Developed the Front-end of the app.",
+      "Worked with the technical manager to integrate the Back-end API.",
+      "Participated in the deployment of the application to GooglePlay.",
     ],
     topFeautres: [
-      "Delivery manager of Mahaal.",
-      "Khdemt f konnash",
-      "Khdemt m3a lolo ou hada b 7ad dato injaz",
+      "Setup multi-module architecture.",
+      "MVVM design pattern",
+      "Deploy the application to play store",
     ],
     utils: [
       {
@@ -130,17 +116,15 @@ export const projects = [
     startDate: "Aug 2020",
     endDate: "Present",
     features: [
-      "Delivery manager of Mahaal.",
-      "Khdemt f konnash",
-      "Khdemt m3a lolo ou hada b 7ad dato injaz",
-      "Delivery manager of Mahaal.",
-      "Khdemt f konnash",
-      "Khdemt m3a lolo ou hada b 7ad dato injaz",
+      "Creator of the first version from scratch.",
+      "New releases Delivery manager.",
+      "Working the product team to develop new features.",
+      "Support for new mobile developers.",
     ],
     topFeautres: [
-      "Create the app from scratch",
-      "Setup Multi-Module architecture",
-      "Print Receipt on Thermal printers (Bluetooth, USB and Network)",
+      "Create the app from scratch.",
+      "Setup Multi-Module architecture.",
+      "Print Receipt on Thermal printers (Bluetooth, USB and Network).",
     ],
     utils: [
       {
