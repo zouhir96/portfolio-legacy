@@ -1,10 +1,11 @@
 import React from "react";
-import { Container, Divider, Grid } from "@mui/material";
+import { Container, Divider, Grid, Paper } from "@mui/material";
 import {
   VerticalBox,
   SubTitle,
   Date,
   Activity,
+  ProjectImagesContainer,
   ProjectImageBox,
   ProjectImageBottomShadow,
   ProjectName,
@@ -29,19 +30,33 @@ export default function Project({ project }) {
 }
 
 const ProjectImagesSlider = (props) => {
+  const [activeImage, setActiveImage] = React.useState(0);
+  const imagesCount = props.images.length;
+  setTimeout(() => {
+    if (activeImage + 1 > imagesCount - 1) {
+      setActiveImage(0);
+    } else {
+      setActiveImage(activeImage + 1);
+    }
+  }, 3000);
+
   return (
-    <Container>
+    <ProjectImagesContainer>
       {props.images.map((img, index) => (
-        <ProjectImage key={index} image={img} />
+        <ProjectImage
+          key={index}
+          image={img}
+          isActive={index === activeImage}
+        />
       ))}
-    </Container>
+    </ProjectImagesContainer>
   );
 };
 
 const ProjectImage = (props) => {
   return (
-    <ProjectImageBox img={props.image.src}>
-      <ProjectImageBottomShadow >
+    <ProjectImageBox isActive={props.isActive} img={props.image.src}>
+      <ProjectImageBottomShadow>
         <ProjectName>{props.image.description}</ProjectName>
       </ProjectImageBottomShadow>
     </ProjectImageBox>
