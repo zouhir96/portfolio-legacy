@@ -96,16 +96,20 @@ export const projects = [
     ],
     images: [
       {
-        src: "/static/tempsnip.png",
-        description: " 1st ledger app in Morocco",
+        src: "/static/konnash_1.png",
+        description: "Digital cash book, 100% free and secure.",
       },
       {
-        src: "/static/tempsnip.png",
-        description: " 1st ledger app in Morocco",
+        src: "/static/konnash_2.png",
+        description: "Collect, track and manage customer debts. \n Share reminders via SMS or WhatsApp.",
       },
       {
-        src: "/static/tempsnip.png",
-        description: " 1st ledger app in Morocco",
+        src: "/static/konnash_3.png",
+        description: "Free Automatic Data Backup.",
+      },
+      {
+        src: "/static/konnash_4.png",
+        description: "Get your PDF reports instantly.",
       },
     ],
   }  ,

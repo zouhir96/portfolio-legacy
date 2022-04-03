@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // sidebar
 export const SocialMedias = styled.div`
@@ -130,16 +130,30 @@ export const ProjectContainer = styled.div`
   background-color: #e2eafc;
 `;
 
+export const ProjectImagesContainer = styled.div`
+  height: 100%;
+  width: 80%;
+  position: relative;
+`;
+
+const fade = keyframes`
+  from {opacity: .4}
+  to {opacity: 1}
+`;
+
 export const ProjectImageBox = styled.div`
   height: 100%;
   width: 100%;
-  display: flex;
+  min-height:300px;
+  display: ${(props) => (props.isActive ? "flex" : "none")};
   flex-direction: column;
+  animation-name: ${fade};
+  animation-duration: 1.5s;
   border-radius: 7px;
   background-image: url(${(props) => props.img});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 `;
 
@@ -173,4 +187,3 @@ export const ProjectTitle = styled(SubTitle)`
 export const ProjectFeatures = styled(VerticalBox)`
   margin: 7px 0px 7px 10px;
 `;
-
