@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from 'next/router'
 import { Avatar } from "@mui/material";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -36,19 +37,14 @@ function openLink(link) {
   window.open(link);
 }
 
-export default function SideBar() {
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
+export default function SideBar({}) {
+  const router = useRouter();
 
-  const handleListItemClick = (event, index) => {
-    setSelectedIndex(index);
-  };
-
-  const MListItem = ({ text, index, href }) => {
+  const MListItem = ({ text, href }) => {
     return (
       <Link href={href}>
         <ListItemButton
-          selected={selectedIndex == index}
-          onClick={(event) => handleListItemClick(event, index)}
+          selected={router.asPath === href}
           sx={{ margin: 1, borderRadius: 2 }}
         >
           <ListItemText primary={text} />

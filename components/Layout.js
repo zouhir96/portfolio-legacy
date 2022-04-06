@@ -65,7 +65,7 @@ function Layout({ children }) {
             },
           }}
         >
-          <SideBar/>
+          <SideBar />
         </Drawer>
         <Drawer
           variant="permanent"
