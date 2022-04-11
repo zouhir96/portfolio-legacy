@@ -7,7 +7,7 @@ function Hero({ hero }) {
     <Container>
       <Grid container direction={{ xs: "column-reverse", md: "row" }}>
         <Grid item xs={12} md={8}>
-          <Typography variant="h4" gutterBottom component="div" mt={10}>
+          <Typography variant="h4" gutterBottom component="div" mt={{xs: 2, md: 10 }}>
             Hi, I am {hero.name}
           </Typography>
           <Typography variant="h4" gutterBottom component="div">
@@ -17,7 +17,7 @@ function Hero({ hero }) {
             {hero.summary}
           </Typography>
           <a href="/static/zouhir_rajdaoui.pdf" download>
-            <Button variant="contained" color="error" sx={{ marginTop: 2 }}>
+            <Button variant="contained" color="error" sx={{ marginTop: {xs: 1, md: 2 } }}>
               Download Resume
             </Button>
           </a>
@@ -30,8 +30,8 @@ function Hero({ hero }) {
               marginTop: { xs: 0, md: 10 },
               marginLeft: "auto",
               marginRight: "auto",
-              width: 200,
-              height: 200,
+              width: {xs: 100, md: 200 },
+              height: {xs: 100, md: 200 },
             }}
           />
         </Grid>
