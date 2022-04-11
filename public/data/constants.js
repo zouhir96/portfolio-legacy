@@ -4,6 +4,14 @@ export const constants = {
   INSTAGRAME_LINK: "https://web.facebook.com/zouhir.rajdaoui",
 };
 
+export const hero = {
+  name: "Zouhir RAJDAOUI",
+  age:25,
+  job:"ANDROID ENGINEER", 
+  image : "/static/my_image.jpeg",
+  summary:"Energetic and curiosity-driven Android Engineer with 2+ years of experience writing top-quality clean code. Passion about IT and especially mobile development. Uses the Passion to achieve an expert knowledge on Android development. Creatively solves problems and applies time managementskills."
+}
+
 export const experiences = [
   {
     title: "Internship at @INYAD",

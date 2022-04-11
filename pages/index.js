@@ -1,30 +1,51 @@
-import * as React from 'react';
-import { experiences } from "../public/data/constants";
-import {
-  PageContainer,
-  PageTitle,
-  PageContentContainer,
-} from "../components/Styled";
-import Experience from "../components/Experience";
+import { Button, Container, Grid, Typography, Avatar } from "@mui/material";
+import * as React from "react";
+import { hero } from "../public/data/constants";
 
-function Experiences({ exps }) {
+function Hero({ hero }) {
   return (
-    <PageContainer>
-      <PageTitle>Experiences</PageTitle>
-      <PageContentContainer>
-        {exps.map((exp, index) => (
-          <Experience key={index} experience={exp} />
-        ))}
-      </PageContentContainer>
-    </PageContainer>
+    <Container>
+      <Grid container direction={{ xs: "column-reverse", md: "row" }}>
+        <Grid item xs={12} md={8}>
+          <Typography variant="h4" gutterBottom component="div" mt={10}>
+            Hi, I am {hero.name}
+          </Typography>
+          <Typography variant="h4" gutterBottom component="div">
+            {hero.job}
+          </Typography>
+          <Typography variant="caption" gutterBottom component="div" mt={5}>
+            {hero.summary}
+          </Typography>
+          <a href="/static/zouhir_rajdaoui.pdf" download>
+            <Button variant="contained" color="error" sx={{ marginTop: 2 }}>
+              Download Resume
+            </Button>
+          </a>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <Avatar
+            alt={hero.name}
+            src={hero.image}
+            sx={{
+              marginTop: { xs: 0, md: 10 },
+              marginLeft: "auto",
+              marginRight: "auto",
+              width: 200,
+              height: 200,
+            }}
+          />
+        </Grid>
+      </Grid>
+    </Container>
   );
 }
 
-export default Experiences;
+export default Hero;
 
-export async function getStaticProps(context) {
+export const getStaticProps = async (ctx) => {
   return {
-    props: { exps: experiences }, // will be passed to the page component as props
+    props: {
+      hero,
+    },
   };
-}
-
+};

@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from 'next/link'
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -8,7 +9,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import SideBar from "./SideBar"
+import SideBar from "./SideBar";
 
 const drawerWidth = 240;
 
@@ -39,9 +40,11 @@ function Layout({ children }) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Zouhir RAJDAOUI
-          </Typography>
+          <Link href="/">
+            <Typography variant="h6" noWrap component="div">
+              Zouhir RAJDAOUI
+            </Typography>
+          </Link>
         </Toolbar>
       </AppBar>
       <Box
@@ -65,7 +68,7 @@ function Layout({ children }) {
             },
           }}
         >
-          <SideBar />
+          <SideBar setMobileOpen={setMobileOpen} />
         </Drawer>
         <Drawer
           variant="permanent"
@@ -78,7 +81,7 @@ function Layout({ children }) {
           }}
           open
         >
-          <SideBar/>
+          <SideBar />
         </Drawer>
       </Box>
       <Box
@@ -104,4 +107,3 @@ Layout.propTypes = {
 };
 
 export default Layout;
-
