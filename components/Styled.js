@@ -30,8 +30,6 @@ export const PageTitle = styled.span`
 export const PageContentContainer = styled.div`
   width: 100%;
   height: 98%;
-  display: flex;
-  flex-direction: column;
 `;
 
 export const PageContentItem = styled.div`

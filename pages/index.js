@@ -2,7 +2,7 @@ import { Button, Container, Grid, Typography, Avatar } from "@mui/material";
 import * as React from "react";
 import { hero } from "../public/data/constants";
 
-function Hero({ hero }) {
+export default function Hero({ hero }) {
   return (
     <Container>
       <Grid container direction={{ xs: "column-reverse", md: "row" }}>
@@ -39,8 +39,6 @@ function Hero({ hero }) {
     </Container>
   );
 }
-
-export default Hero;
 
 export const getStaticProps = async (ctx) => {
   return {
