@@ -12,6 +12,7 @@ import {
   ProjectContainer,
   ProjectTitle,
   ProjectFeatures,
+  HorizontalBox,
 } from "./Styled";
 
 export default function Project({ project }) {
@@ -64,49 +65,39 @@ const ProjectImage = (props) => {
 };
 
 const ProjectContent = (props) => {
+
+  const project = props.project;
   return (
     <VerticalBox>
       <ProjectTitle>
-        Associated With: {props.project.associatedWith}
+      {project.name},   Associated With: {project.associatedWith}
       </ProjectTitle>
       <Date>
-        {props.project.startDate} &ensp; - &ensp; {props.project.endDate}
+        {project.startDate} &ensp; - &ensp; {project.endDate}
       </Date>
       <ProjectFeatures>
-        {props.project.features.map((feat, index) => (
+        {project.features.map((feat, index) => (
           <Activity key={index}>{feat}</Activity>
         ))}
       </ProjectFeatures>
       <SubTitle>Top Features:</SubTitle>
       <ProjectFeatures>
-        {props.project.topFeautres.map((feat, index) => (
+        {project.topFeautres.map((feat, index) => (
           <Activity key={index}>{feat}</Activity>
         ))}
       </ProjectFeatures>
       <SubTitle>Utils:</SubTitle>
-      <ProjectUtils utils={props.project.utils} />
+      <ProjectUtils utils={project.utils} />
     </VerticalBox>
   );
 };
 
 const ProjectUtils = (props) => {
   return (
-    <Grid container columnSpacing={2}>
+    <>
       {props.utils.map((util, index) => (
-        <Grid
-          item
-          key={index}
-          xs={6}
-          sm={4}
-          sx={{ outline: "1px solid black", padding: 1 }}
-        >
-          <VerticalBox>
-            <SubTitle>{util.type}</SubTitle>
-            <Divider />
-            <Activity>{util.items.join(", ")}</Activity>
-          </VerticalBox>
-        </Grid>
+        <SubTitle key={index}>{util.type}: {util.items.join(", ")}</SubTitle>
       ))}
-    </Grid>
+    </>
   );
 };

@@ -11,6 +11,7 @@ export const hero = {
   image: "/static/my_image.jpeg",
   summary:
     "Energetic and curiosity-driven Android Engineer with 2+ years of experience writing top-quality clean code. Passion about IT and especially mobile development. Uses the Passion to achieve an expert knowledge on Android development. Creatively solves problems and applies time managementskills.",
+  resumeLink:"https://drive.google.com/file/d/1sMRrlfRAgjqncIUPi_Z-70QdP6vj-m-Z/view?usp=sharing" 
 };
 
 export const experiences = [
@@ -69,31 +70,34 @@ export const educations = [
 
 export const projects = [
   {
+    id:1,
     name: "Konnash",
     associatedWith: "Internship @INYAD ",
     type: "",
     startDate: "feb 2020",
     endDate: "july 2020",
     features: [
-      "Creator of the first version from scratch.",
-      "Developed the Front-end of the app.",
-      "Worked with the technical manager to integrate the Back-end API.",
-      "Participated in the deployment of the application to GooglePlay.",
+      "100% free and secure cash book.",
+      "allows merchants to record and manage all credit and debit transactions of their customers and suppliers",
+      "Replace traditional tracking methods like pens, papers and calculators with the phone.",
     ],
     topFeautres: [
+      "First version from scratch.",
       "Setup multi-module architecture.",
-      "MVVM design pattern",
-      "Deploy the application to play store",
+      "Setup Navigation component.",
+      "Intergate Back-End API (REST).",
     ],
     utils: [
       {
         type: "Front-End",
         items: [
           "Java",
-          "RxJava2",
-          "Retrofit",
-          "Android Jetpack",
           "Google material design",
+          "Android Jetpack",
+          "RxJava",
+          "Retrofit & OkHttp",
+          "Google APIs (Update, Review, Analytics, ...)",
+          "etc...",
         ],
       },
       {
@@ -102,45 +106,45 @@ export const projects = [
       },
       {
         type: "Database",
-        items: ["SQL, SQLite"],
+        items: ["SQLite, Room"],
       },
     ],
     images: [
       {
-        src: "/static/konnash_1.png",
+        src: "/static/konnash_1.webp",
         description: "Digital cash book, 100% free and secure.",
       },
       {
-        src: "/static/konnash_2.png",
+        src: "/static/konnash_2.webp",
         description:
           "Collect, track and manage customer debts. \n Share reminders via SMS or WhatsApp.",
       },
       {
-        src: "/static/konnash_3.png",
+        src: "/static/konnash_3.webp",
         description: "Free Automatic Data Backup.",
       },
       {
-        src: "/static/konnash_4.png",
+        src: "/static/konnash_4.webp",
         description: "Get your PDF reports instantly.",
       },
     ],
   },
   {
+    id:2,
     name: "Mahaal",
     associatedWith: "Software Engineer @INYAD ",
     type: "",
     startDate: "Aug 2020",
     endDate: "Present",
     features: [
-      "Creator of the first version from scratch.",
-      "New releases Delivery manager.",
-      "Working the product team to develop new features.",
-      "Support for new mobile developers.",
+      "Mobile aplication that allows merchants to create their e-catalog and manage their online business easily.",
+      "It Turns smartphones or tablets into a mobile point of sale (POS).",
+      "It Provides all POS features such as Take orders, organize inventory and monitor sales margins, all in just a few clicks",
     ],
     topFeautres: [
       "Create the app from scratch.",
-      "Setup Multi-Module architecture.",
       "Print Receipt on Thermal printers (Bluetooth, USB and Network).",
+      "Manage Release process(Code review, Prerod Testing, etc...).",
     ],
     utils: [
       {
@@ -177,6 +181,96 @@ export const projects = [
         src: "/static/tempsnip.png",
         description: " 1st ledger app in Morocco",
       },
+    ],
+  },
+  {
+    id:3,
+    name: "RealAnime",
+    associatedWith: "Personal Projects",
+    type: "",
+    startDate: "Semptember 2021",
+    endDate: "Present",
+    features: [
+      "Mobile aplication that provides a large collection of Anime and Manga characters in the REEL world.",
+      "RealAnime users can also You can also download and set wallpapers to home screen or lock screen to customize their device and make it unique..",
+    ],
+    topFeautres: [
+      "Participate in the developement of the version 2.",
+      "Migrate from Java to Kotlin.",
+      "Implement new Design following Material Design Guidlines.",
+      "Migrate Back-End API to NodeJs.",
+    ],
+    utils: [
+      {
+        type: "Front-End",
+        items: [
+          "Kotlin",
+          "Coroutines",
+          "Retrofit/OkHttp",
+          "Design system",
+          "Android Jetpack",
+          "Google material design",
+          "etc...",
+        ],
+      },
+      {
+        type: "Back-End",
+        items: ["REST, NodeJs"],
+      },
+    ],
+    images: [
+      {
+        src: "/static/realanime1.webp",
+        description: "Easy to use application",
+      },
+      {
+        src: "/static/realanime2.webp",
+        description: "Dark mode for brain and eyes rest",
+      },
+      {
+        src: "/static/realanime3.webp",
+        description: "Various new wallpapers will be added constantly",
+      },
+      {
+        src: "/static/realanime4.webp",
+        description: "Customize home or lock screen ",
+      },
+    ],
+  },
+  {
+    id:4,
+    name: "Portfolio",
+    associatedWith: "Personal Projects",
+    type: "",
+    startDate: "Feb 2022",
+    endDate: "Present",
+    features: [
+      "The current project You're viewing right now .",
+      "Because i am a React Lover and i like Single page responsive applications, i decided to develop my personal Portfolio website as a Signle page application using ReactJs and NextJs.",
+      "This project is open source and can be anyone's Portfolio in just few minutes (follow README instruction)."
+    ],
+    topFeautres: [
+      "Designed following Material Design guidlines.",
+      "Developed using NextJs, Material Ui and Styled Components.",
+      "Deployed to Vercel with CI/CD.",
+    ],
+    utils: [
+      {
+        type: "Front-End",
+        items: [
+          "Reacr.js",
+          "Next.js",
+          "Material Ui",
+          "Styled Components",
+          "etc...",
+        ],
+      },
+    ],
+    images: [
+      {
+        src: "/static/ic_current_project.webp",
+        description: "",
+      }
     ],
   },
 ];
@@ -291,5 +385,5 @@ export const skills = [
     name: "DOCKER & DOCKER COMPOSE",
     icon: "/static/skills/ic_docker.svg",
     level: "Familiar",
-  }
+  },
 ];

@@ -15,7 +15,7 @@ import {
 export default function Education({ education }) {
   return (
     <PageContentItem>
-      <Grid container spacing={10}>
+      <Grid container columnSpacing={10}>
         <Grid item xs={12} sm={1}>
           <Image src={education.image} height={80} width={80} layout="fixed" />
         </Grid>

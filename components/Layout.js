@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from 'next/link'
+import Image from "next/image";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -8,7 +9,6 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import SideBar from "./SideBar";
 
 const drawerWidth = 240;
@@ -41,9 +41,7 @@ function Layout({ children }) {
             <MenuIcon />
           </IconButton>
           <Link href="/">
-            <Typography variant="h6" noWrap component="div">
-              Zouhir RAJDAOUI
-            </Typography>
+          <Image width={60} height={40} src="/static/logo_svg.svg" />
           </Link>
         </Toolbar>
       </AppBar>

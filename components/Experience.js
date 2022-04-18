@@ -13,7 +13,7 @@ import {
 function Experience({ experience }) {
   return (
     <PageContentItem>
-      <Grid container spacing={2}>
+      <Grid container columnSpacing={10}>
         <Grid item xs={12} sm={12} md={6}>
           <VerticalBox style={{ height: `100%` }}>
             <Title>{experience.title}</Title>
@@ -30,7 +30,7 @@ function Experience({ experience }) {
             </VerticalBox>
           </VerticalBox>
         </Grid>
-        <Divider sx={{ marginRight: -1 }} orientation="vertical" flexItem />
+        <Divider sx={{ marginRight: -1, display:{xs:'none', md:'block'} }} orientation="vertical" flexItem />
         <Grid item xs={12} sm={12} md={6}>
           <Activity>{experience.description}</Activity>
         </Grid>

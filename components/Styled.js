@@ -35,7 +35,7 @@ export const PageContentContainer = styled.div`
 export const PageContentItem = styled.div`
   width: 100%;
   padding: 1rem;
-  margin-top: 1%;
+  margin-top: 16px;
   border-radius: 12px;
   border: solid 1px #707070;
 `;
@@ -77,7 +77,8 @@ export const Description = styled.span`
   color: rgba(24, 49, 108, 0.7);
 `;
 
-export const Activity = styled.span`
+export const Activity = styled.p`
+  margin: 0;
   font-size: 0.813rem;
   font-weight: 500;
   font-stretch: normal;
@@ -132,6 +133,8 @@ export const ProjectImagesContainer = styled.div`
   height: 100%;
   width: 80%;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const fade = keyframes`
@@ -142,7 +145,7 @@ const fade = keyframes`
 export const ProjectImageBox = styled.div`
   height: 100%;
   width: 100%;
-  min-height:300px;
+  min-height: 300px;
   display: ${(props) => (props.isActive ? "flex" : "none")};
   flex-direction: column;
   animation-name: ${fade};

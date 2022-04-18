@@ -1,5 +1,6 @@
-import { Button, Container, Grid, Typography, Avatar } from "@mui/material";
 import * as React from "react";
+import { Link } from "@mui/material";
+import { Button, Container, Grid, Typography, Avatar } from "@mui/material";
 import { hero } from "../public/data/constants";
 
 export default function Hero({ hero }) {
@@ -16,11 +17,15 @@ export default function Hero({ hero }) {
           <Typography variant="caption" gutterBottom component="div" mt={5}>
             {hero.summary}
           </Typography>
-          <a href="/static/zouhir_rajdaoui.pdf" download>
-            <Button variant="contained" color="error" sx={{ marginTop: {xs: 1, md: 2 } }}>
-              Download Resume
-            </Button>
-          </a>
+          <Link underline="none" href="/static/zouhir_rajdaoui.pdf" download>
+          <Button
+                variant="contained"
+                color="error"
+                sx={{ marginTop: { xs: 1, md: 2 } }}
+              >
+                Download Resume
+              </Button>
+          </Link>
         </Grid>
         <Grid item xs={12} md={4}>
           <Avatar

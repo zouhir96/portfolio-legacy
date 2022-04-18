@@ -7,6 +7,7 @@ import ArrowRight from "@mui/icons-material/ArrowRight";
 import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import { constants } from "../public/data/constants";
 import { SocialMedias } from "../components/Styled";
+import { Container } from "@mui/material";
 
 const listItems = [
   {
@@ -57,8 +58,8 @@ export default function SideBar(props) {
   };
 
   return (
-    <div className="main">
-      <List sx={LinksStyle}>
+    <div style={{height:"100%",backgroundColor: "#e2eafc" }}>
+      <List sx={LinksStyle} >
         {listItems.map((item, index) => (
           <MListItem
             text={item.text}
@@ -78,7 +79,7 @@ const MListItem = ({ text, selected, onClick }) => {
     <ListItemButton
       selected={selected}
       onClick={onClick}
-      sx={{ margin: 1, borderRadius: 2 }}
+      sx={{ margin: 1, backgroundColor: "white", borderRadius: 2, border: "1px solid #06205d" }}
     >
       <ListItemText primary={text} />
       <ArrowRight sx={{ position: "absolute", right: 4 }} />
