@@ -16,20 +16,21 @@ export const hero = {
 
 export const experiences = [
   {
-    title: "Internship at @INYAD",
-    startDate: "feb 02 2020",
-    endDate: "jul 02 2020",
+    title: "Principal Android Engineer at @INYAD",
+    startDate: "aug 17 2020",
+    endDate: "avr 04 2022",
     description:
-      "Currently working as the Principal android develper of the Mahaal application, which has mor than 50k installs on play store. With my team we are delivering new features weekly to give our users the best experience using our application. And to make our users hapier, we take their feedbacks in consideration during new features Brainstorming.",
+      "Worked as the Principal android develper of the Mahaal application, which has mor than 50k installs on play store. With the team we were delivering new features weekly to give our users the best experience using our application. And to make our users hapier, we take their feedbacks in consideration during new features Brainstorming.",
     activities: [
       "- @Mahaal Android application from scratch.",
       "- Integrated Android modern APIs, code refactoring and Multi-Module architecture.",
+      "- Architect and Develop rich features such as: Off-line/On-line Synchronisation, Receipts Printing with ESC/POS thermal printers (Network , Bluetooth and USB connections) using RxJava, Design Patterns And Custom Templates",
       "- Own responsibility for the @Mahaal project release process.",
-      "- Coordinate @Mahaal project and progress reviews for team.",
+      "- Onboirding for new employees and interns.",
     ],
   },
   {
-    title: "Internship at @INYAD",
+    title: "Android Engineer Intern at @INYAD",
     startDate: "feb 02 2020",
     endDate: "jul 02 2020",
     description:
@@ -53,11 +54,11 @@ export const educations = [
     startDate: "Septembre 2018",
     endDate: "July 2020",
     grade: "",
-    activities: ["School football team player"],
+    activities: [],
   },
   {
     image: "/static/fst.png",
-    school: "Faculty of Ccience and Technology(FST)",
+    school: "Faculty of Science and Technologies(FST)",
     where: "Errachidia, Morocco",
     degree: "Bachelor",
     field: "Software Engineering",
@@ -132,7 +133,7 @@ export const projects = [
   {
     id:2,
     name: "Mahaal",
-    associatedWith: "Software Engineer @INYAD ",
+    associatedWith: "Principal Android Engineer at @INYAD",
     type: "",
     startDate: "Aug 2020",
     endDate: "Present",
@@ -186,7 +187,7 @@ export const projects = [
   {
     id:3,
     name: "RealAnime",
-    associatedWith: "Personal Projects",
+    associatedWith: "Contribution",
     type: "",
     startDate: "Semptember 2021",
     endDate: "Present",

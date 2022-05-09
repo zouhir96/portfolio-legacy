@@ -86,7 +86,7 @@ const ProjectContent = (props) => {
           <Activity key={index}>{feat}</Activity>
         ))}
       </ProjectFeatures>
-      <SubTitle>Utils:</SubTitle>
+      <SubTitle>Technologies:</SubTitle>
       <ProjectUtils utils={project.utils} />
     </VerticalBox>
   );

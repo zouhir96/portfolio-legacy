@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Divider from "@mui/material/Divider";
+import LocationCity from "@mui/icons-material/LocationCity"
 import Grid from "@mui/material/Grid";
 import {
   PageContentItem,
@@ -21,16 +21,16 @@ export default function Education({ education }) {
         </Grid>
         <Grid item xs={12} sm={11}>
           <VerticalBox>
-            <Title>{education.school}</Title>
+          <HorizontalBox><Title>{education.school}</Title>&ensp;&ensp;&ensp;&ensp;<LocationCity/><Title>{education.where}</Title></HorizontalBox>
             <SubTitle>{`${education.degree}, ${education.field}`}</SubTitle>
             <HorizontalBox>
               <Date>{education.startDate} &ensp; - &ensp;</Date>
               <Date>{education.endDate}</Date>
             </HorizontalBox>
             <VerticalBox>
-              {education.activities.map((act, index) => (
+             {education.activities.length > 0 && <HorizontalBox><Activity>Activities:&ensp;</Activity> {education.activities.map((act, index) => (
                 <Activity key={index}>{act}</Activity>
-              ))}
+              ))}</HorizontalBox>}
             </VerticalBox>
           </VerticalBox>
         </Grid>
