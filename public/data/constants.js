@@ -198,7 +198,7 @@ export const projects = [
     topFeautres: [
       "Participate in the developement of the version 2.",
       "Migrate from Java to Kotlin.",
-      "Implement new Design following Material Design Guidlines.",
+      "Implement new Design following Material Design Guidelines.",
       "Migrate Back-End API to NodeJs.",
     ],
     utils: [
