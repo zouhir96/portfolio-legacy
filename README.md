@@ -1,11 +1,16 @@
 # Portfolio Usin Next.js
 
 ## 📝 About 
-Single page web applications 
-This project is a challenge to get interviewed for a Job Position
-The idea is to develop and android application that Consumes the TheMovieDb public Api
+I have developed this project when i was learning Next.js framework
+the idea is to an easy and super fast single page application.
+It covers Next.js features such as:
+- Pages
+- Styles
+- External libraries (Material Ui, Styled components)
+- Routing and dynamic Routing using Next/Link and UseRouter hook
+- etc...
 
-## 🔨 Stack
+### 🔨 Stack
 - Next.js
 - Material Ui
 - Styled Components
@@ -27,6 +32,6 @@ if you like this portfolio template you can make it yours in three steps:
 - go to public/data/constants.js and replace the content with your informations
 - run project locally (npm/yarn install => npm run/yarn dev) then build and deploy to your domain(vercel is the easiest way)
 
-## link to live
+## live link 
 [@version1](https://rajdaoui-zouhir.vercel.app)
 
