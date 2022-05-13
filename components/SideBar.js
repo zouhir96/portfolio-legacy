@@ -7,7 +7,6 @@ import ArrowRight from "@mui/icons-material/ArrowRight";
 import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import { constants } from "../public/data/constants";
 import { SocialMedias } from "../components/Styled";
-import { Container } from "@mui/material";
 
 const listItems = [
   {
