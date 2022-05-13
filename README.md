@@ -1,6 +1,8 @@
 # Portfolio Usin Next.js
-![Alt text](./demo/demo_web.png?raw=false "Title")
-![Alt text](./demo/demo_mobile.png?raw=false "Title")
+<p align="center">
+  <img src="./demo/demo_web.png" />
+  <img src="./demo/demo_mobile.png" height="500" width="270"/> 
+</p> 
 
 ## 📝 About 
 I have developed this project when i was learning Next.js framework
