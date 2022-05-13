@@ -1,5 +1,6 @@
 # Portfolio Usin Next.js
-![Alt text](./demo/demo.jpeg?raw=true "Title")
+![Alt text](./demo/demo_web.png?raw=true "Title")
+![Alt text](./demo/demo_mobile.png?raw=true "Title")
 
 ## 📝 About 
 I have developed this project when i was learning Next.js framework
