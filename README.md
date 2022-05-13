@@ -3,7 +3,7 @@
 
 ## 📝 About 
 I have developed this project when i was learning Next.js framework
-the idea is to an easy and super fast single page application.
+the idea is to develop an easy and super fast single page application.
 It covers Next.js features such as:
 - Pages
 - Styles
