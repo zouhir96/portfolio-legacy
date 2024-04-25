@@ -1,6 +1,6 @@
 {
   "name": "nextjs",
-  "version": "5.0.0",
+  "version": "latest",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -18,8 +18,8 @@
     "@mui/material": "latest",
     "next": "latest",
     "prop-types": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "react": "18.2.0 ",
+    "react-dom": "18.2.0 ",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
